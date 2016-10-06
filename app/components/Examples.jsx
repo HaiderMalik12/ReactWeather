@@ -1,7 +1,9 @@
 import React, {PropTypes} from 'react';
 
 const Examples = () => {
-  return (<div>Example Component</div>);
+  return (<div>Examples
+     <h1>Welcome to Examples</h1>
+  </div>);
 }
 
 Examples.propTypes = {

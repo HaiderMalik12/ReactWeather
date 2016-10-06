@@ -26630,7 +26630,12 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    'Example Component'
+	    'Examples',
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Welcome to Examples'
+	    )
 	  );
 	};
 	

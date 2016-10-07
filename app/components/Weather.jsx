@@ -20,7 +20,7 @@ export default class Weather extends React.Component {
 
        openWeatherMap.getTemp(location).then(temp =>{
 
-           debugger;
+
            this.setState({
                location:location,
                temp:temp

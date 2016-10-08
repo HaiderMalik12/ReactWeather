@@ -26699,7 +26699,7 @@
 /* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -26713,13 +26713,47 @@
 	
 	var About = function About() {
 	    return _react2.default.createElement(
-	        'div',
+	        "div",
 	        null,
-	        'About Component'
+	        _react2.default.createElement(
+	            "h1",
+	            { className: "text-centered" },
+	            "About"
+	        ),
+	        _react2.default.createElement(
+	            "p",
+	            null,
+	            "This is a Weather Application built on React"
+	        ),
+	        _react2.default.createElement(
+	            "p",
+	            null,
+	            "Some of the Tools i uses"
+	        ),
+	        _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                    "a",
+	                    { href: "https://facebook.github.io/react" },
+	                    "React This was the javascript framework used."
+	                )
+	            ),
+	            _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                    "a",
+	                    { href: "https://openweathermap.org" },
+	                    "Open Weather Map"
+	                )
+	            )
+	        )
 	    );
 	};
-	
-	About.propTypes = {};
 	
 	exports.default = About;
 

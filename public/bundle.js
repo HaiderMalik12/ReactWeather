@@ -24922,7 +24922,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 	
 	var _react = __webpack_require__(8);
@@ -24935,23 +24935,22 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Main = _react2.default.createClass({
-	  displayName: 'Main',
-	
-	  render: function render() {
+	var Main = function Main(props) {
 	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(_Nav2.default, null),
-	      _react2.default.createElement(
-	        'h2',
+	        'div',
 	        null,
-	        'Main component'
-	      ),
-	      this.props.children
+	        _react2.default.createElement(_Nav2.default, null),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'columns medium-6 large-4 small-centered' },
+	                props.children
+	            )
+	        )
 	    );
-	  }
-	});
+	};
 	
 	exports.default = Main;
 
@@ -26730,32 +26729,53 @@
 
 	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
+	var React = __webpack_require__(8);
 	
-	var _react = __webpack_require__(8);
+	var _require = __webpack_require__(166);
 	
-	var _react2 = _interopRequireDefault(_react);
+	var Link = _require.Link;
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Examples = function Examples() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'Examples',
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Welcome to Examples'
-	    )
-	  );
+	var Examples = function Examples(props) {
+	    return React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	            'h1',
+	            { className: 'text-center' },
+	            'Examples'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Here are a few example locations to try out:'
+	        ),
+	        React.createElement(
+	            'ol',
+	            null,
+	            React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                    Link,
+	                    { to: '/?location=Philadelphia' },
+	                    'Philadelphia, PA'
+	                )
+	            ),
+	            React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                    Link,
+	                    { to: '/?location=Rio' },
+	                    'Rio, Brazil'
+	                )
+	            )
+	        )
+	    );
 	};
 	
-	Examples.propTypes = {};
-	
-	exports.default = Examples;
+	module.exports = Examples;
 
 /***/ },
 /* 253 */

@@ -9,7 +9,7 @@ const About = () => {
             <ul>
                 <li>
                     <a href="https://facebook.github.io/react">React
-                    This was the javascript framework used.
+                    This was the javascript frokyramework used.
                     </a>
                 </li>
                 <li>

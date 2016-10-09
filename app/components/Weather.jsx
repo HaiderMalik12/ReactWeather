@@ -12,6 +12,7 @@ export default class Weather extends React.Component {
             location:'Miami',
             temp:88
         };
+
      this.handleSearch = this.handleSearch.bind(this);
     }
 

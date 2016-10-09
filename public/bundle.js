@@ -25123,6 +25123,7 @@
 	            location: 'Miami',
 	            temp: 88
 	        };
+	
 	        _this.handleSearch = _this.handleSearch.bind(_this);
 	        return _this;
 	    }
@@ -26739,7 +26740,7 @@
 	                _react2.default.createElement(
 	                    "a",
 	                    { href: "https://facebook.github.io/react" },
-	                    "React This was the javascript framework used."
+	                    "React This was the javascript frokyramework used."
 	                )
 	            ),
 	            _react2.default.createElement(

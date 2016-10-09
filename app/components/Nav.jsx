@@ -2,11 +2,13 @@ import React, {PropTypes} from 'react';
 import {Link,IndexLink} from 'react-router';
 
 export default class Nav extends React.Component {
+
     constructor(props){
         super(props);
 
         this.onSearch = this.onSearch.bind(this);
     }
+
     onSearch(e){
         e.preventDefault();
         alert('Not Yet Wired Up');
